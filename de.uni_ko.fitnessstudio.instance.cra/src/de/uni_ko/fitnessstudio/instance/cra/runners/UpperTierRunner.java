@@ -30,7 +30,7 @@ public class UpperTierRunner {
 
 	public static void main(String[] args) {
 
-		for (int i = 8; i <= runs; i++) {
+		for (int i = 1; i <= runs; i++) {
 			System.gc();
 			System.out.println("============");
 			System.out.println("Run " + i);
