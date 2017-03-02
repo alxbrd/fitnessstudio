@@ -1,4 +1,4 @@
-# Fitnessstudio
+# FitnessStudio
 *Generating effective mutation operators for search-based model-driven engineering.*
 
 ### Contents 
@@ -28,5 +28,5 @@ This repository contains three projects:
 
 **Developing a new instance of the framework**
 
-* Copy the  **de.uni_ko.fitnessstudio.instance.cra** project and cutomize the included components for your needs.
+* Copy the  **de.uni_ko.fitnessstudio.instance.cra** project and customize the included components for your needs.
 
