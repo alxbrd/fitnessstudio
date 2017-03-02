@@ -4,7 +4,7 @@
 ### Contents 
 
 This repository contains three projects:
-* **de.uni_ko.fitnessstudio**, a framework for generation efficient mutation operators
+* **de.uni_ko.fitnessstudio**, a framework for generating efficient mutation operators
 * **de.uni_ko.fitnessstudio.instance.cra**, an instance for applying this framework to the [CRA case](https://github.com/martin-fleck/cra-ttc2016/)
 * **de.uni_ko.fitnessstudio.instance.cra.eval**, evaluation data obtained from the CRA instance
 
