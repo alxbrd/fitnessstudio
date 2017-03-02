@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_q1QJYP9AEeaQtMTDpePN5w">
+  <units xsi:type="henshin:Rule" xmi:id="_q1QJYf9AEeaQtMTDpePN5w" name="rule" description="null, createPreserveNodeWithOutgoingEdge, addNAC, addNAC2">
+    <lhs xmi:id="_q1QJYv9AEeaQtMTDpePN5w" name="Lhs">
+      <nodes xmi:id="_q1QJY_9AEeaQtMTDpePN5w" incoming="_q1QJZf9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_q1QJZP9AEeaQtMTDpePN5w" outgoing="_q1QJZf9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_q1QJZf9AEeaQtMTDpePN5w" source="_q1QJZP9AEeaQtMTDpePN5w" target="_q1QJY_9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_q1QJZv9AEeaQtMTDpePN5w">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_q1QJZ_9AEeaQtMTDpePN5w">
+          <conclusion xmi:id="_q1QJaP9AEeaQtMTDpePN5w">
+            <nodes xmi:id="_q1QJaf9AEeaQtMTDpePN5w" incoming="_q1QJa_9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <nodes xmi:id="_q1QJav9AEeaQtMTDpePN5w" outgoing="_q1QJa_9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_q1QJa_9AEeaQtMTDpePN5w" source="_q1QJav9AEeaQtMTDpePN5w" target="_q1QJaf9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_q1QJbP9AEeaQtMTDpePN5w" origin="_q1QJY_9AEeaQtMTDpePN5w" image="_q1QJav9AEeaQtMTDpePN5w"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_q1QJbf9AEeaQtMTDpePN5w" name="Rhs">
+      <nodes xmi:id="_q1QJbv9AEeaQtMTDpePN5w" incoming="_q1QJcP9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_q1QJb_9AEeaQtMTDpePN5w" outgoing="_q1QJcP9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_q1QJcP9AEeaQtMTDpePN5w" source="_q1QJb_9AEeaQtMTDpePN5w" target="_q1QJbv9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_q1QJcf9AEeaQtMTDpePN5w" origin="_q1QJY_9AEeaQtMTDpePN5w" image="_q1QJbv9AEeaQtMTDpePN5w"/>
+    <mappings xmi:id="_q1QJcv9AEeaQtMTDpePN5w" origin="_q1QJZP9AEeaQtMTDpePN5w" image="_q1QJb_9AEeaQtMTDpePN5w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_q1QJc_9AEeaQtMTDpePN5w" name="rule" description="null, createCrOrDelNodeWithContainmentEdge, createPreserveNodeWithIncomingEdge, addNAC2, addNAC2">
+    <lhs xmi:id="_q1QJdP9AEeaQtMTDpePN5w" name="Lhs">
+      <nodes xmi:id="_q1QJdf9AEeaQtMTDpePN5w" outgoing="_q1QJeP9AEeaQtMTDpePN5w _q1QJef9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_q1QJdv9AEeaQtMTDpePN5w" incoming="_q1QJeP9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_q1QJd_9AEeaQtMTDpePN5w" incoming="_q1QJef9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature"/>
+      </nodes>
+      <edges xmi:id="_q1QJeP9AEeaQtMTDpePN5w" source="_q1QJdf9AEeaQtMTDpePN5w" target="_q1QJdv9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <edges xmi:id="_q1QJef9AEeaQtMTDpePN5w" source="_q1QJdf9AEeaQtMTDpePN5w" target="_q1QJd_9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/features"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_q1QJev9AEeaQtMTDpePN5w">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_q1QJe_9AEeaQtMTDpePN5w">
+          <conclusion xmi:id="_q1QJfP9AEeaQtMTDpePN5w">
+            <nodes xmi:id="_q1QJff9AEeaQtMTDpePN5w" incoming="_q1QJf_9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+            </nodes>
+            <nodes xmi:id="_q1QJfv9AEeaQtMTDpePN5w" outgoing="_q1QJf_9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+            </nodes>
+            <edges xmi:id="_q1QJf_9AEeaQtMTDpePN5w" source="_q1QJfv9AEeaQtMTDpePN5w" target="_q1QJff9AEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/features"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_q1QJgP9AEeaQtMTDpePN5w" origin="_q1QJdf9AEeaQtMTDpePN5w" image="_q1QJfv9AEeaQtMTDpePN5w"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_q1QJgf9AEeaQtMTDpePN5w" name="Rhs">
+      <nodes xmi:id="_q1QJgv9AEeaQtMTDpePN5w" outgoing="_q1QJhP9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_q1QJg_9AEeaQtMTDpePN5w" incoming="_q1QJhP9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature"/>
+      </nodes>
+      <edges xmi:id="_q1QJhP9AEeaQtMTDpePN5w" source="_q1QJgv9AEeaQtMTDpePN5w" target="_q1QJg_9AEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/features"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_q1QJhf9AEeaQtMTDpePN5w" origin="_q1QJdf9AEeaQtMTDpePN5w" image="_q1QJgv9AEeaQtMTDpePN5w"/>
+    <mappings xmi:id="_q1QJhv9AEeaQtMTDpePN5w" origin="_q1QJd_9AEeaQtMTDpePN5w" image="_q1QJg_9AEeaQtMTDpePN5w"/>
+  </units>
+</henshin:Module>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_usWlgP86Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_usWlgf86Eeaxpoj7reNF3A" name="rule">
+    <lhs xmi:id="_usWlgv86Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_usWlg_86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_usWlhP86Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_usWlhf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_usWlhv86Eeaxpoj7reNF3A" origin="_usWlg_86Eeaxpoj7reNF3A" image="_usWlhf86Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_usWlh_86Eeaxpoj7reNF3A" name="rule" description="null, createPreserveEdgesWithNode, createPreserveEdge, createPreserveNodeWithOutgoingEdge">
+    <lhs xmi:id="_usWliP86Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_usWlif86Eeaxpoj7reNF3A" outgoing="_usWljP86Eeaxpoj7reNF3A _usWljf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_usWliv86Eeaxpoj7reNF3A" incoming="_usWljP86Eeaxpoj7reNF3A _usWljf86Eeaxpoj7reNF3A _usWljv86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_usWli_86Eeaxpoj7reNF3A" outgoing="_usWljv86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_usWljP86Eeaxpoj7reNF3A" source="_usWlif86Eeaxpoj7reNF3A" target="_usWliv86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_usWljf86Eeaxpoj7reNF3A" source="_usWlif86Eeaxpoj7reNF3A" target="_usWliv86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_usWljv86Eeaxpoj7reNF3A" source="_usWli_86Eeaxpoj7reNF3A" target="_usWliv86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_usWlj_86Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_usWlkP86Eeaxpoj7reNF3A" outgoing="_usWlk_86Eeaxpoj7reNF3A _usWllP86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_usWlkf86Eeaxpoj7reNF3A" incoming="_usWlk_86Eeaxpoj7reNF3A _usWllP86Eeaxpoj7reNF3A _usWllf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_usWlkv86Eeaxpoj7reNF3A" outgoing="_usWllf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_usWlk_86Eeaxpoj7reNF3A" source="_usWlkP86Eeaxpoj7reNF3A" target="_usWlkf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_usWllP86Eeaxpoj7reNF3A" source="_usWlkP86Eeaxpoj7reNF3A" target="_usWlkf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_usWllf86Eeaxpoj7reNF3A" source="_usWlkv86Eeaxpoj7reNF3A" target="_usWlkf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_usWllv86Eeaxpoj7reNF3A" origin="_usWlif86Eeaxpoj7reNF3A" image="_usWlkP86Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_usWll_86Eeaxpoj7reNF3A" origin="_usWliv86Eeaxpoj7reNF3A" image="_usWlkf86Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_usWlmP86Eeaxpoj7reNF3A" origin="_usWli_86Eeaxpoj7reNF3A" image="_usWlkv86Eeaxpoj7reNF3A"/>
+  </units>
+</henshin:Module>

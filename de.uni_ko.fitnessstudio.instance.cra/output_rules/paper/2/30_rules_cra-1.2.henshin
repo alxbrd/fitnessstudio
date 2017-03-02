@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_4WM8AP83Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_YqJZ8f83Eeaxpoj7reNF3A" name="rule" description="null, createPreserveEdgesWithNode, createPreserveNodeWithIncomingEdge, createCrOrDelEdge, createPreserveNodeWithOutgoingEdge, createPreserveNodeWithIncomingEdge, addNAC2">
+    <lhs xmi:id="_YqJZ8v83Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_YqJZ8_83Eeaxpoj7reNF3A" outgoing="_YqJZ-P83Eeaxpoj7reNF3A _YqJZ-f83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_YqJZ9P83Eeaxpoj7reNF3A" incoming="_YqJZ-P83Eeaxpoj7reNF3A" outgoing="_YqJZ-_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqJZ9f83Eeaxpoj7reNF3A" incoming="_YqJZ-f83Eeaxpoj7reNF3A _YqJZ-v83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqJZ9v83Eeaxpoj7reNF3A" outgoing="_YqJZ-v83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqJZ9_83Eeaxpoj7reNF3A" incoming="_YqJZ-_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_YqJZ-P83Eeaxpoj7reNF3A" source="_YqJZ8_83Eeaxpoj7reNF3A" target="_YqJZ9P83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqJZ-f83Eeaxpoj7reNF3A" source="_YqJZ8_83Eeaxpoj7reNF3A" target="_YqJZ9f83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqJZ-v83Eeaxpoj7reNF3A" source="_YqJZ9v83Eeaxpoj7reNF3A" target="_YqJZ9f83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <edges xmi:id="_YqJZ-_83Eeaxpoj7reNF3A" source="_YqJZ9P83Eeaxpoj7reNF3A" target="_YqJZ9_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_YqKBAP83Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_YqKBAf83Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_YqKBAv83Eeaxpoj7reNF3A">
+            <nodes xmi:id="_YqKBA_83Eeaxpoj7reNF3A" incoming="_YqKBBf83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+            </nodes>
+            <nodes xmi:id="_YqKBBP83Eeaxpoj7reNF3A" outgoing="_YqKBBf83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_YqKBBf83Eeaxpoj7reNF3A" source="_YqKBBP83Eeaxpoj7reNF3A" target="_YqKBA_83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_YqKBBv83Eeaxpoj7reNF3A" origin="_YqJZ9_83Eeaxpoj7reNF3A" image="_YqKBBP83Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_YqKBB_83Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_YqKBCP83Eeaxpoj7reNF3A" outgoing="_YqKBDf83Eeaxpoj7reNF3A _YqKBDv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_YqKBCf83Eeaxpoj7reNF3A" incoming="_YqKBDf83Eeaxpoj7reNF3A" outgoing="_YqKBD_83Eeaxpoj7reNF3A _YqKBEf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqKBCv83Eeaxpoj7reNF3A" incoming="_YqKBDv83Eeaxpoj7reNF3A _YqKBD_83Eeaxpoj7reNF3A _YqKBEP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqKBC_83Eeaxpoj7reNF3A" outgoing="_YqKBEP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqKBDP83Eeaxpoj7reNF3A" incoming="_YqKBEf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_YqKBDf83Eeaxpoj7reNF3A" source="_YqKBCP83Eeaxpoj7reNF3A" target="_YqKBCf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqKBDv83Eeaxpoj7reNF3A" source="_YqKBCP83Eeaxpoj7reNF3A" target="_YqKBCv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBD_83Eeaxpoj7reNF3A" source="_YqKBCf83Eeaxpoj7reNF3A" target="_YqKBCv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBEP83Eeaxpoj7reNF3A" source="_YqKBC_83Eeaxpoj7reNF3A" target="_YqKBCv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <edges xmi:id="_YqKBEf83Eeaxpoj7reNF3A" source="_YqKBCf83Eeaxpoj7reNF3A" target="_YqKBDP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_YqKBEv83Eeaxpoj7reNF3A" origin="_YqJZ8_83Eeaxpoj7reNF3A" image="_YqKBCP83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBE_83Eeaxpoj7reNF3A" origin="_YqJZ9P83Eeaxpoj7reNF3A" image="_YqKBCf83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBFP83Eeaxpoj7reNF3A" origin="_YqJZ9f83Eeaxpoj7reNF3A" image="_YqKBCv83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBFf83Eeaxpoj7reNF3A" origin="_YqJZ9v83Eeaxpoj7reNF3A" image="_YqKBC_83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBFv83Eeaxpoj7reNF3A" origin="_YqJZ9_83Eeaxpoj7reNF3A" image="_YqKBDP83Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_YqKBF_83Eeaxpoj7reNF3A" name="rule" description="null, createPreserveEdgesWithNode, addNAC, addNAC2">
+    <lhs xmi:id="_YqKBGP83Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_YqKBGf83Eeaxpoj7reNF3A" outgoing="_YqKBG_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqKBGv83Eeaxpoj7reNF3A" incoming="_YqKBG_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_YqKBG_83Eeaxpoj7reNF3A" source="_YqKBGf83Eeaxpoj7reNF3A" target="_YqKBGv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_YqKBHP83Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_YqKBHf83Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_YqKBHv83Eeaxpoj7reNF3A">
+            <nodes xmi:id="_YqKBH_83Eeaxpoj7reNF3A" incoming="_YqKBIf83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <nodes xmi:id="_YqKBIP83Eeaxpoj7reNF3A" outgoing="_YqKBIf83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_YqKBIf83Eeaxpoj7reNF3A" source="_YqKBIP83Eeaxpoj7reNF3A" target="_YqKBH_83Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_YqKBIv83Eeaxpoj7reNF3A" origin="_YqKBGv83Eeaxpoj7reNF3A" image="_YqKBIP83Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_YqKBI_83Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_YqKBJP83Eeaxpoj7reNF3A" outgoing="_YqKBJv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqKBJf83Eeaxpoj7reNF3A" incoming="_YqKBJv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_YqKBJv83Eeaxpoj7reNF3A" source="_YqKBJP83Eeaxpoj7reNF3A" target="_YqKBJf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_YqKBJ_83Eeaxpoj7reNF3A" origin="_YqKBGf83Eeaxpoj7reNF3A" image="_YqKBJP83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBKP83Eeaxpoj7reNF3A" origin="_YqKBGv83Eeaxpoj7reNF3A" image="_YqKBJf83Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_YqKBKf83Eeaxpoj7reNF3A" name="rule" description="null, createPreserveEdgesWithNode, createPreserveNodeWithIncomingEdge, createCrOrDelEdge, createPreserveNodeWithOutgoingEdge, createPreserveEdgesWithNode, createPreserveNodeWithIncomingEdge, createCrOrDelEdge, createPreserveEdgesWithNode, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_YqKBKv83Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_YqKBK_83Eeaxpoj7reNF3A" outgoing="_YqKBMv83Eeaxpoj7reNF3A _YqKBM_83Eeaxpoj7reNF3A _YqKBNf83Eeaxpoj7reNF3A _YqKBN_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_YqKBLP83Eeaxpoj7reNF3A" incoming="_YqKBMv83Eeaxpoj7reNF3A" outgoing="_YqKBNv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqKBLf83Eeaxpoj7reNF3A" incoming="_YqKBM_83Eeaxpoj7reNF3A _YqKBNP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqKBLv83Eeaxpoj7reNF3A" outgoing="_YqKBNP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqKBL_83Eeaxpoj7reNF3A" incoming="_YqKBNf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqKBMP83Eeaxpoj7reNF3A" incoming="_YqKBNv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqKBMf83Eeaxpoj7reNF3A" incoming="_YqKBN_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <edges xmi:id="_YqKBMv83Eeaxpoj7reNF3A" source="_YqKBK_83Eeaxpoj7reNF3A" target="_YqKBLP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqKBM_83Eeaxpoj7reNF3A" source="_YqKBK_83Eeaxpoj7reNF3A" target="_YqKBLf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBNP83Eeaxpoj7reNF3A" source="_YqKBLv83Eeaxpoj7reNF3A" target="_YqKBLf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <edges xmi:id="_YqKBNf83Eeaxpoj7reNF3A" source="_YqKBK_83Eeaxpoj7reNF3A" target="_YqKBL_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqKBNv83Eeaxpoj7reNF3A" source="_YqKBLP83Eeaxpoj7reNF3A" target="_YqKBMP83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBN_83Eeaxpoj7reNF3A" source="_YqKBK_83Eeaxpoj7reNF3A" target="_YqKBMf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_YqKBOP83Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_YqKBOf83Eeaxpoj7reNF3A" outgoing="_YqKBQP83Eeaxpoj7reNF3A _YqKBQf83Eeaxpoj7reNF3A _YqKBRP83Eeaxpoj7reNF3A _YqKBR_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_YqKBOv83Eeaxpoj7reNF3A" incoming="_YqKBQP83Eeaxpoj7reNF3A" outgoing="_YqKBQv83Eeaxpoj7reNF3A _YqKBRf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqKBO_83Eeaxpoj7reNF3A" incoming="_YqKBQf83Eeaxpoj7reNF3A _YqKBQv83Eeaxpoj7reNF3A _YqKBQ_83Eeaxpoj7reNF3A _YqKBRv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqKBPP83Eeaxpoj7reNF3A" outgoing="_YqKBQ_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_YqKBPf83Eeaxpoj7reNF3A" incoming="_YqKBRP83Eeaxpoj7reNF3A" outgoing="_YqKBRv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_YqKBPv83Eeaxpoj7reNF3A" incoming="_YqKBRf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_YqKBP_83Eeaxpoj7reNF3A" incoming="_YqKBR_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <edges xmi:id="_YqKBQP83Eeaxpoj7reNF3A" source="_YqKBOf83Eeaxpoj7reNF3A" target="_YqKBOv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqKBQf83Eeaxpoj7reNF3A" source="_YqKBOf83Eeaxpoj7reNF3A" target="_YqKBO_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBQv83Eeaxpoj7reNF3A" source="_YqKBOv83Eeaxpoj7reNF3A" target="_YqKBO_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBQ_83Eeaxpoj7reNF3A" source="_YqKBPP83Eeaxpoj7reNF3A" target="_YqKBO_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+      <edges xmi:id="_YqKBRP83Eeaxpoj7reNF3A" source="_YqKBOf83Eeaxpoj7reNF3A" target="_YqKBPf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_YqKBRf83Eeaxpoj7reNF3A" source="_YqKBOv83Eeaxpoj7reNF3A" target="_YqKBPv83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBRv83Eeaxpoj7reNF3A" source="_YqKBPf83Eeaxpoj7reNF3A" target="_YqKBO_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_YqKBR_83Eeaxpoj7reNF3A" source="_YqKBOf83Eeaxpoj7reNF3A" target="_YqKBP_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_YqKBSP83Eeaxpoj7reNF3A" origin="_YqKBK_83Eeaxpoj7reNF3A" image="_YqKBOf83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBSf83Eeaxpoj7reNF3A" origin="_YqKBLP83Eeaxpoj7reNF3A" image="_YqKBOv83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBSv83Eeaxpoj7reNF3A" origin="_YqKBLf83Eeaxpoj7reNF3A" image="_YqKBO_83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBS_83Eeaxpoj7reNF3A" origin="_YqKBLv83Eeaxpoj7reNF3A" image="_YqKBPP83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBTP83Eeaxpoj7reNF3A" origin="_YqKBL_83Eeaxpoj7reNF3A" image="_YqKBPf83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBTf83Eeaxpoj7reNF3A" origin="_YqKBMP83Eeaxpoj7reNF3A" image="_YqKBPv83Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_YqKBTv83Eeaxpoj7reNF3A" origin="_YqKBMf83Eeaxpoj7reNF3A" image="_YqKBP_83Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_YqKBT_83Eeaxpoj7reNF3A">
+      <lhs xmi:id="_YqKBUP83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBUf83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_YqKBUv83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBU_83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_YqKBVP83Eeaxpoj7reNF3A" origin="_YqKBUf83Eeaxpoj7reNF3A" image="_YqKBU_83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBVf83Eeaxpoj7reNF3A" origin="_YqKBLf83Eeaxpoj7reNF3A" image="_YqKBUf83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBVv83Eeaxpoj7reNF3A" origin="_YqKBO_83Eeaxpoj7reNF3A" image="_YqKBU_83Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_YqKBV_83Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_YqKBWP83Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_YqKBWf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_YqKBWv83Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_YqKBW_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_YqKBXP83Eeaxpoj7reNF3A" origin="_YqKBWf83Eeaxpoj7reNF3A" image="_YqKBW_83Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_YqKBXf83Eeaxpoj7reNF3A">
+      <lhs xmi:id="_YqKBXv83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBX_83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_YqKBYP83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBYf83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_YqKBYv83Eeaxpoj7reNF3A" origin="_YqKBX_83Eeaxpoj7reNF3A" image="_YqKBYf83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBY_83Eeaxpoj7reNF3A" origin="_YqKBWf83Eeaxpoj7reNF3A" image="_YqKBX_83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBZP83Eeaxpoj7reNF3A" origin="_YqKBW_83Eeaxpoj7reNF3A" image="_YqKBYf83Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_YqKBZf83Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_YqKBZv83Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_YqKBZ_83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_YqKBaP83Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_YqKBaf83Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_YqKBav83Eeaxpoj7reNF3A" origin="_YqKBZ_83Eeaxpoj7reNF3A" image="_YqKBaf83Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_YqKBa_83Eeaxpoj7reNF3A">
+      <lhs xmi:id="_YqKBbP83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBbf83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_YqKBbv83Eeaxpoj7reNF3A">
+        <nodes xmi:id="_YqKBb_83Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_YqKBcP83Eeaxpoj7reNF3A" origin="_YqKBbf83Eeaxpoj7reNF3A" image="_YqKBb_83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBcf83Eeaxpoj7reNF3A" origin="_YqKBZ_83Eeaxpoj7reNF3A" image="_YqKBbf83Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_YqKBcv83Eeaxpoj7reNF3A" origin="_YqKBaf83Eeaxpoj7reNF3A" image="_YqKBb_83Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+</henshin:Module>

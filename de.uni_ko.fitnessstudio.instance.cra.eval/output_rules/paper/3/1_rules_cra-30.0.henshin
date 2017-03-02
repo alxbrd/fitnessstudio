@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_RyoTEP84Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_Ps58sf84Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_Ps58sv84Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_Ps58s_84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_Ps58tP84Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_Ps58tf84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_Ps58tv84Eeaxpoj7reNF3A" origin="_Ps58s_84Eeaxpoj7reNF3A" image="_Ps58tf84Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_Ps58t_84Eeaxpoj7reNF3A">
+      <lhs xmi:id="_Ps58uP84Eeaxpoj7reNF3A">
+        <nodes xmi:id="_Ps58uf84Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_Ps58uv84Eeaxpoj7reNF3A">
+        <nodes xmi:id="_Ps58u_84Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_Ps58vP84Eeaxpoj7reNF3A" origin="_Ps58uf84Eeaxpoj7reNF3A" image="_Ps58u_84Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_Ps58vf84Eeaxpoj7reNF3A" origin="_Ps58s_84Eeaxpoj7reNF3A" image="_Ps58uf84Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_Ps58vv84Eeaxpoj7reNF3A" origin="_Ps58tf84Eeaxpoj7reNF3A" image="_Ps58u_84Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Ps58v_84Eeaxpoj7reNF3A" name="rule" description="null, createPreserveNodeWithIncomingEdge, addNAC, createPreserveNodeWithOutgoingEdge, addNAC">
+    <lhs xmi:id="_Ps58wP84Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_Ps58wf84Eeaxpoj7reNF3A" incoming="_Ps58xf84Eeaxpoj7reNF3A" outgoing="_Ps58xP84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps58wv84Eeaxpoj7reNF3A" incoming="_Ps58xP84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_Ps58w_84Eeaxpoj7reNF3A" outgoing="_Ps58xf84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_Ps58xP84Eeaxpoj7reNF3A" source="_Ps58wf84Eeaxpoj7reNF3A" target="_Ps58wv84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_Ps58xf84Eeaxpoj7reNF3A" source="_Ps58w_84Eeaxpoj7reNF3A" target="_Ps58wf84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Ps58xv84Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Ps58x_84Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_Ps58yP84Eeaxpoj7reNF3A">
+            <nodes xmi:id="_Ps58yf84Eeaxpoj7reNF3A" incoming="_Ps58y_84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature"/>
+            </nodes>
+            <nodes xmi:id="_Ps58yv84Eeaxpoj7reNF3A" outgoing="_Ps58y_84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_Ps58y_84Eeaxpoj7reNF3A" source="_Ps58yv84Eeaxpoj7reNF3A" target="_Ps58yf84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Ps58zP84Eeaxpoj7reNF3A" origin="_Ps58wv84Eeaxpoj7reNF3A" image="_Ps58yv84Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_Ps58zf84Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_Ps58zv84Eeaxpoj7reNF3A" incoming="_Ps580v84Eeaxpoj7reNF3A" outgoing="_Ps580f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps58z_84Eeaxpoj7reNF3A" incoming="_Ps580f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <nodes xmi:id="_Ps580P84Eeaxpoj7reNF3A" outgoing="_Ps580v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_Ps580f84Eeaxpoj7reNF3A" source="_Ps58zv84Eeaxpoj7reNF3A" target="_Ps58z_84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_Ps580v84Eeaxpoj7reNF3A" source="_Ps580P84Eeaxpoj7reNF3A" target="_Ps58zv84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Ps580_84Eeaxpoj7reNF3A" origin="_Ps58wf84Eeaxpoj7reNF3A" image="_Ps58zv84Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_Ps581P84Eeaxpoj7reNF3A" origin="_Ps58wv84Eeaxpoj7reNF3A" image="_Ps58z_84Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_Ps581f84Eeaxpoj7reNF3A" origin="_Ps58w_84Eeaxpoj7reNF3A" image="_Ps580P84Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Ps581v84Eeaxpoj7reNF3A" name="rule" description="null, createPreserveEdgesWithNode, createPreserveNodeWithIncomingEdge, createCrOrDelEdge, addNAC2">
+    <lhs xmi:id="_Ps581_84Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_Ps582P84Eeaxpoj7reNF3A" outgoing="_Ps582_84Eeaxpoj7reNF3A _Ps583P84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_Ps582f84Eeaxpoj7reNF3A" incoming="_Ps582_84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps582v84Eeaxpoj7reNF3A" incoming="_Ps583P84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_Ps582_84Eeaxpoj7reNF3A" source="_Ps582P84Eeaxpoj7reNF3A" target="_Ps582f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_Ps583P84Eeaxpoj7reNF3A" source="_Ps582P84Eeaxpoj7reNF3A" target="_Ps582v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Ps583f84Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Ps583v84Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_Ps583_84Eeaxpoj7reNF3A">
+            <nodes xmi:id="_Ps584P84Eeaxpoj7reNF3A" incoming="_Ps584v84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <nodes xmi:id="_Ps584f84Eeaxpoj7reNF3A" outgoing="_Ps584v84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_Ps584v84Eeaxpoj7reNF3A" source="_Ps584f84Eeaxpoj7reNF3A" target="_Ps584P84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Ps584_84Eeaxpoj7reNF3A" origin="_Ps582v84Eeaxpoj7reNF3A" image="_Ps584f84Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_Ps585P84Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_Ps585f84Eeaxpoj7reNF3A" outgoing="_Ps586P84Eeaxpoj7reNF3A _Ps586f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <nodes xmi:id="_Ps585v84Eeaxpoj7reNF3A" incoming="_Ps586P84Eeaxpoj7reNF3A" outgoing="_Ps586v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps585_84Eeaxpoj7reNF3A" incoming="_Ps586f84Eeaxpoj7reNF3A _Ps586v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_Ps586P84Eeaxpoj7reNF3A" source="_Ps585f84Eeaxpoj7reNF3A" target="_Ps585v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_Ps586f84Eeaxpoj7reNF3A" source="_Ps585f84Eeaxpoj7reNF3A" target="_Ps585_84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <edges xmi:id="_Ps586v84Eeaxpoj7reNF3A" source="_Ps585v84Eeaxpoj7reNF3A" target="_Ps585_84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Ps586_84Eeaxpoj7reNF3A" origin="_Ps582P84Eeaxpoj7reNF3A" image="_Ps585f84Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_Ps587P84Eeaxpoj7reNF3A" origin="_Ps582f84Eeaxpoj7reNF3A" image="_Ps585v84Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_Ps587f84Eeaxpoj7reNF3A" origin="_Ps582v84Eeaxpoj7reNF3A" image="_Ps585_84Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Ps587v84Eeaxpoj7reNF3A" name="rule" description="null, createPreserveNodeWithIncomingEdge, addNAC, addNAC">
+    <lhs xmi:id="_Ps587_84Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_Ps588P84Eeaxpoj7reNF3A" outgoing="_Ps588v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps588f84Eeaxpoj7reNF3A" incoming="_Ps588v84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_Ps588v84Eeaxpoj7reNF3A" source="_Ps588P84Eeaxpoj7reNF3A" target="_Ps588f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Ps588_84Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Ps589P84Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_Ps589f84Eeaxpoj7reNF3A">
+            <nodes xmi:id="_Ps589v84Eeaxpoj7reNF3A" incoming="_Ps58-P84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature"/>
+            </nodes>
+            <nodes xmi:id="_Ps589_84Eeaxpoj7reNF3A" outgoing="_Ps58-P84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_Ps58-P84Eeaxpoj7reNF3A" source="_Ps589_84Eeaxpoj7reNF3A" target="_Ps589v84Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Ps58-f84Eeaxpoj7reNF3A" origin="_Ps588f84Eeaxpoj7reNF3A" image="_Ps589_84Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_Ps58-v84Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_Ps58-_84Eeaxpoj7reNF3A" outgoing="_Ps58_f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_Ps58_P84Eeaxpoj7reNF3A" incoming="_Ps58_f84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_Ps58_f84Eeaxpoj7reNF3A" source="_Ps58-_84Eeaxpoj7reNF3A" target="_Ps58_P84Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Ps58_v84Eeaxpoj7reNF3A" origin="_Ps588P84Eeaxpoj7reNF3A" image="_Ps58-_84Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_Ps58__84Eeaxpoj7reNF3A" origin="_Ps588f84Eeaxpoj7reNF3A" image="_Ps58_P84Eeaxpoj7reNF3A"/>
+  </units>
+</henshin:Module>

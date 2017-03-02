@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_F8muAP89Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_F8muAf89Eeaxpoj7reNF3A" name="rule" description="null, addNAC">
+    <lhs xmi:id="_F8muAv89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_F8muA_89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_F8muBP89Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_F8muBf89Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_F8muBv89Eeaxpoj7reNF3A">
+            <nodes xmi:id="_F8muB_89Eeaxpoj7reNF3A" incoming="_F8muCf89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <nodes xmi:id="_F8muCP89Eeaxpoj7reNF3A" outgoing="_F8muCf89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+            </nodes>
+            <edges xmi:id="_F8muCf89Eeaxpoj7reNF3A" source="_F8muCP89Eeaxpoj7reNF3A" target="_F8muB_89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_F8muCv89Eeaxpoj7reNF3A" origin="_F8muA_89Eeaxpoj7reNF3A" image="_F8muCP89Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_F8muC_89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_F8muDP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_F8muDf89Eeaxpoj7reNF3A" origin="_F8muA_89Eeaxpoj7reNF3A" image="_F8muDP89Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_F8muDv89Eeaxpoj7reNF3A" name="rule">
+    <lhs xmi:id="_F8muD_89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_F8muEP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_F8muEf89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_F8muEv89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_F8muE_89Eeaxpoj7reNF3A" origin="_F8muEP89Eeaxpoj7reNF3A" image="_F8muEv89Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_F8muFP89Eeaxpoj7reNF3A" name="rule" description="null, createPreserveNodeWithOutgoingEdge">
+    <lhs xmi:id="_F8muFf89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_F8muFv89Eeaxpoj7reNF3A" incoming="_F8muGP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_F8muF_89Eeaxpoj7reNF3A" outgoing="_F8muGP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_F8muGP89Eeaxpoj7reNF3A" source="_F8muF_89Eeaxpoj7reNF3A" target="_F8muFv89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_F8muGf89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_F8muGv89Eeaxpoj7reNF3A" incoming="_F8muHP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_F8muG_89Eeaxpoj7reNF3A" outgoing="_F8muHP89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_F8muHP89Eeaxpoj7reNF3A" source="_F8muG_89Eeaxpoj7reNF3A" target="_F8muGv89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_F8muHf89Eeaxpoj7reNF3A" origin="_F8muFv89Eeaxpoj7reNF3A" image="_F8muGv89Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_F8muHv89Eeaxpoj7reNF3A" origin="_F8muF_89Eeaxpoj7reNF3A" image="_F8muG_89Eeaxpoj7reNF3A"/>
+  </units>
+</henshin:Module>

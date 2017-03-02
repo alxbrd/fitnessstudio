@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_SiD10P9BEeaQtMTDpePN5w">
+  <units xsi:type="henshin:Rule" xmi:id="_SiD10f9BEeaQtMTDpePN5w" name="rule" description="null, createPreserveNodeWithIncomingEdge">
+    <lhs xmi:id="_SiD10v9BEeaQtMTDpePN5w" name="Lhs">
+      <nodes xmi:id="_SiD10_9BEeaQtMTDpePN5w" outgoing="_SiD11f9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_SiD11P9BEeaQtMTDpePN5w" incoming="_SiD11f9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_SiD11f9BEeaQtMTDpePN5w" source="_SiD10_9BEeaQtMTDpePN5w" target="_SiD11P9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_SiD11v9BEeaQtMTDpePN5w" name="Rhs">
+      <nodes xmi:id="_SiD11_9BEeaQtMTDpePN5w" outgoing="_SiD12f9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <nodes xmi:id="_SiD12P9BEeaQtMTDpePN5w" incoming="_SiD12f9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <edges xmi:id="_SiD12f9BEeaQtMTDpePN5w" source="_SiD11_9BEeaQtMTDpePN5w" target="_SiD12P9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/classes"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_SiD12v9BEeaQtMTDpePN5w" origin="_SiD10_9BEeaQtMTDpePN5w" image="_SiD11_9BEeaQtMTDpePN5w"/>
+    <mappings xmi:id="_SiD12_9BEeaQtMTDpePN5w" origin="_SiD11P9BEeaQtMTDpePN5w" image="_SiD12P9BEeaQtMTDpePN5w"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_SiD13P9BEeaQtMTDpePN5w" name="rule" description="null, addNAC2">
+    <lhs xmi:id="_SiD13f9BEeaQtMTDpePN5w" name="Lhs">
+      <nodes xmi:id="_SiD13v9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_SiD13_9BEeaQtMTDpePN5w">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_SiD14P9BEeaQtMTDpePN5w">
+          <conclusion xmi:id="_SiD14f9BEeaQtMTDpePN5w">
+            <nodes xmi:id="_SiD14v9BEeaQtMTDpePN5w" incoming="_SiD15P9BEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <nodes xmi:id="_SiD14_9BEeaQtMTDpePN5w" outgoing="_SiD15P9BEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+            </nodes>
+            <edges xmi:id="_SiD15P9BEeaQtMTDpePN5w" source="_SiD14_9BEeaQtMTDpePN5w" target="_SiD14v9BEeaQtMTDpePN5w">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel/features"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_SiD15f9BEeaQtMTDpePN5w" origin="_SiD13v9BEeaQtMTDpePN5w" image="_SiD14_9BEeaQtMTDpePN5w"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_SiD15v9BEeaQtMTDpePN5w" name="Rhs">
+      <nodes xmi:id="_SiD15_9BEeaQtMTDpePN5w">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//ClassModel"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_SiD16P9BEeaQtMTDpePN5w" origin="_SiD13v9BEeaQtMTDpePN5w" image="_SiD15_9BEeaQtMTDpePN5w"/>
+  </units>
+</henshin:Module>

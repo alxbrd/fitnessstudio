@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_ix2X0P85Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_ix2X0f85Eeaxpoj7reNF3A" name="rule">
+    <lhs xmi:id="_ix2X0v85Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_ix2X0_85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_ix2X1P85Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_ix2X1f85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_ix2X1v85Eeaxpoj7reNF3A" origin="_ix2X0_85Eeaxpoj7reNF3A" image="_ix2X1f85Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_ix2X1_85Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_ix2X2P85Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_ix2X2f85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_ix2X2v85Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_ix2X2_85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_ix2X3P85Eeaxpoj7reNF3A" origin="_ix2X2f85Eeaxpoj7reNF3A" image="_ix2X2_85Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_ix2X3f85Eeaxpoj7reNF3A">
+      <lhs xmi:id="_ix2X3v85Eeaxpoj7reNF3A">
+        <nodes xmi:id="_ix2X3_85Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_ix2X4P85Eeaxpoj7reNF3A">
+        <nodes xmi:id="_ix2X4f85Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_ix2X4v85Eeaxpoj7reNF3A" origin="_ix2X3_85Eeaxpoj7reNF3A" image="_ix2X4f85Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_ix2X4_85Eeaxpoj7reNF3A" origin="_ix2X2f85Eeaxpoj7reNF3A" image="_ix2X3_85Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_ix2X5P85Eeaxpoj7reNF3A" origin="_ix2X2_85Eeaxpoj7reNF3A" image="_ix2X4f85Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_ix2X5f85Eeaxpoj7reNF3A" name="rule" description="null, addNAC">
+    <lhs xmi:id="_ix2X5v85Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_ix2X5_85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_ix2X6P85Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_ix2X6f85Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_ix2X6v85Eeaxpoj7reNF3A">
+            <nodes xmi:id="_ix2X6_85Eeaxpoj7reNF3A" incoming="_ix2X7f85Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature"/>
+            </nodes>
+            <nodes xmi:id="_ix2X7P85Eeaxpoj7reNF3A" outgoing="_ix2X7f85Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_ix2X7f85Eeaxpoj7reNF3A" source="_ix2X7P85Eeaxpoj7reNF3A" target="_ix2X6_85Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_ix2X7v85Eeaxpoj7reNF3A" origin="_ix2X5_85Eeaxpoj7reNF3A" image="_ix2X7P85Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_ix2X7_85Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_ix2X8P85Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_ix2X8f85Eeaxpoj7reNF3A" origin="_ix2X5_85Eeaxpoj7reNF3A" image="_ix2X8P85Eeaxpoj7reNF3A"/>
+  </units>
+</henshin:Module>

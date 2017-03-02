@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rIrDYP86Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_rIrDYf86Eeaxpoj7reNF3A" name="rule">
+    <lhs xmi:id="_rIrDYv86Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_rIrDY_86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_rIrDZP86Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_rIrDZf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_rIrDZv86Eeaxpoj7reNF3A" origin="_rIrDY_86Eeaxpoj7reNF3A" image="_rIrDZf86Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rIrDZ_86Eeaxpoj7reNF3A" name="rule" description="null, createPreserveNodeWithOutgoingEdge, createPreserveEdge, addNAC">
+    <lhs xmi:id="_rIrDaP86Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_rIrDaf86Eeaxpoj7reNF3A" incoming="_rIrDa_86Eeaxpoj7reNF3A _rIrDbP86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_rIrDav86Eeaxpoj7reNF3A" outgoing="_rIrDa_86Eeaxpoj7reNF3A _rIrDbP86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_rIrDa_86Eeaxpoj7reNF3A" source="_rIrDav86Eeaxpoj7reNF3A" target="_rIrDaf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_rIrDbP86Eeaxpoj7reNF3A" source="_rIrDav86Eeaxpoj7reNF3A" target="_rIrDaf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_rIrDbf86Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_rIrDbv86Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_rIrDb_86Eeaxpoj7reNF3A">
+            <nodes xmi:id="_rIrDcP86Eeaxpoj7reNF3A" incoming="_rIrDcv86Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <nodes xmi:id="_rIrDcf86Eeaxpoj7reNF3A" outgoing="_rIrDcv86Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+            </nodes>
+            <edges xmi:id="_rIrDcv86Eeaxpoj7reNF3A" source="_rIrDcf86Eeaxpoj7reNF3A" target="_rIrDcP86Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_rIrDc_86Eeaxpoj7reNF3A" origin="_rIrDaf86Eeaxpoj7reNF3A" image="_rIrDcf86Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_rIrDdP86Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_rIrDdf86Eeaxpoj7reNF3A" incoming="_rIrDd_86Eeaxpoj7reNF3A _rIrDeP86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Attribute"/>
+      </nodes>
+      <nodes xmi:id="_rIrDdv86Eeaxpoj7reNF3A" outgoing="_rIrDd_86Eeaxpoj7reNF3A _rIrDeP86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+      </nodes>
+      <edges xmi:id="_rIrDd_86Eeaxpoj7reNF3A" source="_rIrDdv86Eeaxpoj7reNF3A" target="_rIrDdf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+      <edges xmi:id="_rIrDeP86Eeaxpoj7reNF3A" source="_rIrDdv86Eeaxpoj7reNF3A" target="_rIrDdf86Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method/dataDependency"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_rIrDef86Eeaxpoj7reNF3A" origin="_rIrDaf86Eeaxpoj7reNF3A" image="_rIrDdf86Eeaxpoj7reNF3A"/>
+    <mappings xmi:id="_rIrDev86Eeaxpoj7reNF3A" origin="_rIrDav86Eeaxpoj7reNF3A" image="_rIrDdv86Eeaxpoj7reNF3A"/>
+  </units>
+</henshin:Module>

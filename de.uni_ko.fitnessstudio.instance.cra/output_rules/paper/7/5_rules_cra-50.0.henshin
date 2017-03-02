@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_LDK_MP89Eeaxpoj7reNF3A">
+  <units xsi:type="henshin:Rule" xmi:id="_LDK_Mf89Eeaxpoj7reNF3A" name="rule" description="null, addNAC2, createCrOrDelEdge">
+    <lhs xmi:id="_LDK_Mv89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_LDK_M_89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_LDK_NP89Eeaxpoj7reNF3A">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_LDK_Nf89Eeaxpoj7reNF3A">
+          <conclusion xmi:id="_LDK_Nv89Eeaxpoj7reNF3A">
+            <nodes xmi:id="_LDK_N_89Eeaxpoj7reNF3A" incoming="_LDK_Of89Eeaxpoj7reNF3A" outgoing="_LDK_Ov89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Method"/>
+            </nodes>
+            <nodes xmi:id="_LDK_OP89Eeaxpoj7reNF3A" incoming="_LDK_Ov89Eeaxpoj7reNF3A" outgoing="_LDK_Of89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+            </nodes>
+            <edges xmi:id="_LDK_Of89Eeaxpoj7reNF3A" source="_LDK_OP89Eeaxpoj7reNF3A" target="_LDK_N_89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class/encapsulates"/>
+            </edges>
+            <edges xmi:id="_LDK_Ov89Eeaxpoj7reNF3A" source="_LDK_N_89Eeaxpoj7reNF3A" target="_LDK_OP89Eeaxpoj7reNF3A">
+              <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Feature/isEncapsulatedBy"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_LDK_O_89Eeaxpoj7reNF3A" origin="_LDK_M_89Eeaxpoj7reNF3A" image="_LDK_OP89Eeaxpoj7reNF3A"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_LDK_PP89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_LDK_Pf89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_LDK_Pv89Eeaxpoj7reNF3A" origin="_LDK_M_89Eeaxpoj7reNF3A" image="_LDK_Pf89Eeaxpoj7reNF3A"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_LDK_P_89Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_LDK_QP89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_LDK_Qf89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_LDK_Qv89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_LDK_Q_89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_LDK_RP89Eeaxpoj7reNF3A" origin="_LDK_Qf89Eeaxpoj7reNF3A" image="_LDK_Q_89Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_LDK_Rf89Eeaxpoj7reNF3A">
+      <lhs xmi:id="_LDK_Rv89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_R_89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_LDK_SP89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_Sf89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_LDK_Sv89Eeaxpoj7reNF3A" origin="_LDK_R_89Eeaxpoj7reNF3A" image="_LDK_Sf89Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_LDK_S_89Eeaxpoj7reNF3A" origin="_LDK_Qf89Eeaxpoj7reNF3A" image="_LDK_R_89Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_LDK_TP89Eeaxpoj7reNF3A" origin="_LDK_Q_89Eeaxpoj7reNF3A" image="_LDK_Sf89Eeaxpoj7reNF3A"/>
+    </multiRules>
+    <multiRules xmi:id="_LDK_Tf89Eeaxpoj7reNF3A">
+      <lhs xmi:id="_LDK_Tv89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_T_89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_LDK_UP89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_Uf89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_LDK_Uv89Eeaxpoj7reNF3A" origin="_LDK_T_89Eeaxpoj7reNF3A" image="_LDK_Uf89Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_LDK_U_89Eeaxpoj7reNF3A" origin="_LDK_Qf89Eeaxpoj7reNF3A" image="_LDK_T_89Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_LDK_VP89Eeaxpoj7reNF3A" origin="_LDK_Q_89Eeaxpoj7reNF3A" image="_LDK_Uf89Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_LDK_Vf89Eeaxpoj7reNF3A" name="rule" description="null, CreateMultiRuleWithMappedPreserveNode, CreateMultiRuleWithMappedPreserveNode">
+    <lhs xmi:id="_LDK_Vv89Eeaxpoj7reNF3A" name="Lhs">
+      <nodes xmi:id="_LDK_V_89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_LDK_WP89Eeaxpoj7reNF3A" name="Rhs">
+      <nodes xmi:id="_LDK_Wf89Eeaxpoj7reNF3A">
+        <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_LDK_Wv89Eeaxpoj7reNF3A" origin="_LDK_V_89Eeaxpoj7reNF3A" image="_LDK_Wf89Eeaxpoj7reNF3A"/>
+    <multiRules xmi:id="_LDK_W_89Eeaxpoj7reNF3A">
+      <lhs xmi:id="_LDK_XP89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_Xf89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_LDK_Xv89Eeaxpoj7reNF3A">
+        <nodes xmi:id="_LDK_X_89Eeaxpoj7reNF3A">
+          <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_LDK_YP89Eeaxpoj7reNF3A" origin="_LDK_Xf89Eeaxpoj7reNF3A" image="_LDK_X_89Eeaxpoj7reNF3A"/>
+      <multiRules xmi:id="_LDK_Yf89Eeaxpoj7reNF3A">
+        <lhs xmi:id="_LDK_Yv89Eeaxpoj7reNF3A">
+          <nodes xmi:id="_LDK_Y_89Eeaxpoj7reNF3A">
+            <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+          </nodes>
+        </lhs>
+        <rhs xmi:id="_LDK_ZP89Eeaxpoj7reNF3A">
+          <nodes xmi:id="_LDK_Zf89Eeaxpoj7reNF3A">
+            <type href="http://momot.big.tuwien.ac.at/architectureCRA/1.0#//Class"/>
+          </nodes>
+        </rhs>
+        <mappings xmi:id="_LDK_Zv89Eeaxpoj7reNF3A" origin="_LDK_Y_89Eeaxpoj7reNF3A" image="_LDK_Zf89Eeaxpoj7reNF3A"/>
+        <multiMappings xmi:id="_LDK_Z_89Eeaxpoj7reNF3A" origin="_LDK_Xf89Eeaxpoj7reNF3A" image="_LDK_Y_89Eeaxpoj7reNF3A"/>
+        <multiMappings xmi:id="_LDK_aP89Eeaxpoj7reNF3A" origin="_LDK_X_89Eeaxpoj7reNF3A" image="_LDK_Zf89Eeaxpoj7reNF3A"/>
+      </multiRules>
+      <multiMappings xmi:id="_LDK_af89Eeaxpoj7reNF3A" origin="_LDK_V_89Eeaxpoj7reNF3A" image="_LDK_Xf89Eeaxpoj7reNF3A"/>
+      <multiMappings xmi:id="_LDK_av89Eeaxpoj7reNF3A" origin="_LDK_Wf89Eeaxpoj7reNF3A" image="_LDK_X_89Eeaxpoj7reNF3A"/>
+    </multiRules>
+  </units>
+</henshin:Module>
