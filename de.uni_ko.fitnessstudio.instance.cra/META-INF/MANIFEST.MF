@@ -1,12 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Cra
+Bundle-Name: CraInstance
 Bundle-SymbolicName: de.uni_ko.fitnessstudio.instance.cra
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: lib/cra.ttc16_1.0.0.jar
 Require-Bundle: de.uni_ko.fitnessstudio,
  org.eclipse.emf.ecore,
  org.eclipse.emf.henshin.model
-Import-Package: architectureCRA,
- org.eclipse.emf.ecore
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
