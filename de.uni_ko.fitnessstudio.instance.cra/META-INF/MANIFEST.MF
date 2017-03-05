@@ -6,5 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: lib/cra.ttc16_1.0.0.jar
 Require-Bundle: de.uni_ko.fitnessstudio,
  org.eclipse.emf.ecore,
- org.eclipse.emf.henshin.model
+ org.eclipse.emf.henshin.model,
+ cra.ttc16
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
