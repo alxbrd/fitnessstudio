@@ -36,12 +36,15 @@ public class LowerTierRunnerWithFixed {
 	private static String MUTATION_RULES_DIRECTORY = "transformation\\fixed";
 	private static String OUTPUT_PREFIX = "output_models\\" +INPUT_MODEL_ID + "\\" + new SimpleDateFormat("HH_mm_ss").format(Calendar.getInstance().getTime()).toString() + "\\";
 
-	private static int runs = 30;
-	private static GAConfiguration configuration = new GAConfiguration(200, 40, true);
+	private static int RUNS = 30;
+	private static int ITERATIONS = 400;
+	private static int POPULATION_SIZE = 40;
+	
+	private static GAConfiguration configuration = new GAConfiguration(ITERATIONS, POPULATION_SIZE, true);
 
 	public static void main(String[] args) {
 		ArchitectureCRAPackage.eINSTANCE.eClass();
-		for (int i = 1; i<=runs ; i++) {
+		for (int i = 1; i<=RUNS ; i++) {
 			System.out.println("============");
 			System.out.println("Run "+i);
 			System.out.println("============");

@@ -24,13 +24,18 @@ public class UpperTierRunner {
 	private static String OUTPUT_PREFIX = "output_rules\\" + INPUT_MODEL_ID + "\\"
 			+ new SimpleDateFormat("HH_mm_ss").format(Calendar.getInstance().getTime()).toString() + "\\";
 
-	private static int runs = 30;
-	private static GAConfiguration configurationUpper = new GAConfiguration(40, 20, true);
-	private static GAConfiguration configurationLower = new GAConfiguration(20, 2, false);
+	private static int UPPER_TIER_ITERATIONS = 40;
+	private static int UPPER_TIER_POPULATION_SIZE = 20;
+	private static int LOWER_TIER_ITERATIONS = 20;
+	private static int LOWER_TIER_POPULATION_SIZE = 2;
+	private static int RUNS = 30;
+	
+	private static GAConfiguration configurationUpper = new GAConfiguration(UPPER_TIER_ITERATIONS, UPPER_TIER_POPULATION_SIZE, true);
+	private static GAConfiguration configurationLower = new GAConfiguration(LOWER_TIER_ITERATIONS, LOWER_TIER_POPULATION_SIZE, false);
 
 	public static void main(String[] args) {
 
-		for (int i = 1; i <= runs; i++) {
+		for (int i = 1; i <= RUNS; i++) {
 			System.gc();
 			System.out.println("============");
 			System.out.println("Run " + i);
