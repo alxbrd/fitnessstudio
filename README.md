@@ -15,7 +15,7 @@ This repository contains three projects:
 
 * We recommend using [Eclipse Neon, Modeling Tools distribution](https://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neonr), with an installed nightly build of [Henshin](https://www.eclipse.org/henshin/install.php).
 * Import the contents of this repository to your local Eclipse workspace.
-* The *cra.ttc16_1.0.0.jar* file from the *de.uni_ko.fitnessstudio.instance.cra/lib* directory contains an Eclipse plug-in for the CRA meta-model, which needs to deployed in the Eclipse instance where the framework is executed. To this end, copy the jar file to the  *drop-in* folder of your Eclipse installation and restart Eclipse.
+* Copy the  *cra.ttc16_1.0.0.jar* file from  *de.uni_ko.fitnessstudio.instance.cra/lib* to the  *drop-in* folder of your Eclipse installation and restart Eclipse. This file contains an Eclipse plug-in with generated code for the CRA meta-model.
 
 **Generate mutation operators (CRA instance)**
 
