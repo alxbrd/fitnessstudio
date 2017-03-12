@@ -1,5 +1,5 @@
 # FitnessStudio
-*Generating effective mutation operators for search-based model-driven engineering.*
+*Generating efficient mutation operators for search-based model-driven engineering.*
 
 ### Contents 
 
