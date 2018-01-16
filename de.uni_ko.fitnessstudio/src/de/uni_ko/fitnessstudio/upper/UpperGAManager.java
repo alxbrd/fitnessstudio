@@ -12,6 +12,7 @@ import com.lagodiuk.GAIterationListener;
 import com.lagodiuk.GAPopulation;
 import com.lagodiuk.GAwithTimeout;
 
+import de.uni_ko.fitnessstudio.lower.DomainModelDistanceCalculator;
 import de.uni_ko.fitnessstudio.lower.DomainModelFitness;
 import de.uni_ko.fitnessstudio.lower.DomainModelInit;
 import de.uni_ko.fitnessstudio.util.GAConfiguration;
@@ -25,6 +26,7 @@ public class UpperGAManager {
 	private EObject inputModel;
 	private EPackage metaModel;
 	private DomainModelFitness domainModelFitness;
+	private DomainModelDistanceCalculator distanceCalculator;
 	private DomainModelInit init;
 	private ConstraintChecker constraintChecker;
 	private GAConfiguration configurationUpper;
@@ -35,7 +37,7 @@ public class UpperGAManager {
 
 	private GA<RuleSet, Double> ga;
 
-	public UpperGAManager(DomainModelFitness domainModelFitness, DomainModelInit init, ConstraintChecker ruleSetChecker,
+	public UpperGAManager(DomainModelFitness domainModelFitness, DomainModelDistanceCalculator distanceCalculator,  DomainModelInit init, ConstraintChecker ruleSetChecker,
 			EPackage metaModel, GAConfiguration configurationUpper, GAConfiguration configurationLower,
 			EObject inputModel, int timeoutSeconds) {
 		this.domainModelFitness = domainModelFitness;
@@ -46,15 +48,17 @@ public class UpperGAManager {
 		this.configurationLower = configurationLower;
 		this.inputModel = inputModel;
 		this.timeoutSeconds = timeoutSeconds;
+		this.distanceCalculator = distanceCalculator;
 	}
 
 	public double runGA() {
 		time = System.currentTimeMillis();
 		GAPopulation<RuleSet> population = RuleSetInit.create(configurationUpper.getPopulationSize(), metaModel,
 				constraintChecker);
-		Fitness<RuleSet, Double> fitness = new RuleSetFitness(domainModelFitness, init, inputModel, configurationLower,
+		Fitness<RuleSet, Double> fitness = new RuleSetFitness(domainModelFitness, distanceCalculator, init, inputModel, configurationLower,
 				constraintChecker);
-		ga = new GAwithTimeout<RuleSet, Double>(population, fitness, timeoutSeconds);
+		RuleSetDistanceCalculator distanceCalculator = new RuleSetDistanceCalculator();
+		ga = new GAwithTimeout<RuleSet, Double>(population, fitness, distanceCalculator, timeoutSeconds);
 		addListener(ga);
 		ga.evolve(configurationUpper.getIterations());
 		RuleSet best = ga.getBest();

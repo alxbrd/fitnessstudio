@@ -15,12 +15,13 @@
  ******************************************************************************/
 package com.lagodiuk;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
-
 
 public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 
@@ -56,6 +57,8 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 
 	private final Fitness<C, T> fitnessFunc;
 
+	private final DistanceCalculator<C, T> distanceCalculator;
+
 	public Fitness<C, T> getFitnessFunc() {
 		return fitnessFunc;
 	}
@@ -73,13 +76,13 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 
 	private int iteration = 0;
 
-	public GA(GAPopulation<C> population, Fitness<C, T> fitnessFunc) {
+	public GA(GAPopulation<C> population, Fitness<C, T> fitnessFunc, DistanceCalculator<C, T> distanceCalculator) {
 		this.population = population;
 		this.fitnessFunc = fitnessFunc;
+		this.distanceCalculator = distanceCalculator;
 		this.chromosomesComparator = new ChromosomesComparator();
 		this.population.sortPopulationByFitness(this.chromosomesComparator);
 	}
-	
 
 	public void evolve() {
 		int parentPopulationSize = this.population.getSize();
@@ -90,24 +93,49 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 			newPopulation.addChromosome(this.population.getChromosomeByIndex(i));
 		}
 
-
 		for (int i = 0; i < parentPopulationSize; i++) {
 			C chromosome = this.population.getChromosomeByIndex(i);
 			C mutated = chromosome.mutate();
-
-			C otherChromosome = this.population.getRandomChromosome();
-			List<C> crossovered = chromosome.crossover(otherChromosome);
-
 			newPopulation.addChromosome(mutated);
+
+		}
+
+		int newPopulationSize = newPopulation.getSize();
+		Double[][] distanceMatrix = (Double[][]) distanceCalculator.calculate(newPopulation.getChromosomes());
+		for (int i = 0; i < newPopulationSize; i++) {
+			C chromosome = newPopulation.getChromosomeByIndex(i);
+			C otherChromosome = getRandomDistantChromosome(i, newPopulationSize, distanceMatrix, newPopulation.getChromosomes());
+			// C otherChromosome = this.population.getRandomChromosome();
+			List<C> crossovered = chromosome.crossover(otherChromosome);
 			for (C c : crossovered) {
 				newPopulation.addChromosome(c);
 			}
-		}
 
+		}
 
 		newPopulation.sortPopulationByFitness(this.chromosomesComparator);
 		newPopulation.trim(parentPopulationSize);
 		this.population = newPopulation;
+	}
+
+	private C getRandomDistantChromosome(int i, int newPopulationSize, Double[][] distanceMatrix, List<C> chromosomes) {
+		double greatestDistance = 0.0;
+		List<C> results = new ArrayList<C>();
+		for (int j = 0; j <newPopulationSize; j++) {
+			if (i != j) {
+//				System.out.println(i + " " + j);
+				double dist = distanceMatrix[i][j];
+				if (dist == greatestDistance) {
+					results.add(chromosomes.get(j));
+				} else if (dist > greatestDistance) {
+					greatestDistance = dist;
+					results.clear();
+					results.add(chromosomes.get(j));
+				}
+			}
+		}
+		return results.get((int) Math.floor(results.size() * Math.random()));
+
 	}
 
 	public void evolve(int count) {

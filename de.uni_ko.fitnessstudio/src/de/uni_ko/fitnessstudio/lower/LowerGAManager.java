@@ -12,15 +12,17 @@ public class LowerGAManager {
 	private DomainModelMutator mutator;
 	private DomainModelInit domainModelInit;
 	private DomainModelFitness fitness;
+	private DomainModelDistanceCalculator distanceCalculator;
 
 	private ConstraintChecker constraintChecker; 
 	private GAConfiguration configuration;
 	private GA<DomainModel, Double> ga;
 
-	public LowerGAManager(DomainModelMutator mutator, DomainModelFitness fitness, DomainModelInit init, GAConfiguration configuration, ConstraintChecker constraintChecker) {
+	public LowerGAManager(DomainModelMutator mutator, DomainModelFitness fitness, DomainModelDistanceCalculator distanceCalculator, DomainModelInit init, GAConfiguration configuration, ConstraintChecker constraintChecker) {
 		this.mutator = mutator;
 		this.domainModelInit = init;
 		this.fitness = fitness;
+		this.distanceCalculator = distanceCalculator;
 		this.configuration = configuration;
 		this.constraintChecker = constraintChecker;
 	}
@@ -28,7 +30,7 @@ public class LowerGAManager {
 	public double runGA() {
 		domainModelInit.setMutator(mutator);
 		GAPopulation<DomainModel> population = domainModelInit.createPopulation(configuration.getPopulationSize());
-		ga = new GA<DomainModel, Double>(population, fitness);
+		ga = new GA<DomainModel, Double>(population, fitness, distanceCalculator);
 		addListener(ga);
 		ga.evolve(configuration.getIterations());
 		DomainModel best = ga.getBest();

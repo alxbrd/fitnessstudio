@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import architectureCRA.ArchitectureCRAPackage;
 import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelCrossover;
+import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelDistanceCalculator;
 import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelFitness;
 import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelInit;
 import de.uni_ko.fitnessstudio.instance.cra.customized.CRAConstraintChecker;
@@ -19,7 +20,7 @@ import de.uni_ko.fitnessstudio.util.GAConfiguration;
 import de.uni_ko.fitnessstudio.util.ModelIO;
 
 public class UpperTierRunner {
-	private static String INPUT_MODEL_ID = "C";
+	private static String INPUT_MODEL_ID = "D";
 	private static String INPUT_MODEL = "input\\TTC_InputRDG_" + INPUT_MODEL_ID + ".xmi";
 	private static String OUTPUT_PREFIX = "output_rules\\" + INPUT_MODEL_ID + "\\"
 			+ new SimpleDateFormat("HH_mm_ss").format(Calendar.getInstance().getTime()).toString() + "\\";
@@ -46,13 +47,14 @@ public class UpperTierRunner {
 			ArchitectureCRAPackage.eINSTANCE.eClass();
 			EPackage metaModel = ArchitectureCRAPackage.eINSTANCE;
 			ClassModelFitness domainModelFitness = new ClassModelFitness();
+			ClassModelDistanceCalculator distanceCalculator = new ClassModelDistanceCalculator();
 			ClassModelCrossover domainModelCrossover = new ClassModelCrossover();
 			CRAConstraintChecker mutationConstraintChecker = new CRAConstraintChecker();
 			EObject inputModel = ModelIO.loadModel(INPUT_MODEL);
 
 			ClassModelInit init = new ClassModelInit(inputModel, null, domainModelCrossover, domainModelFitness);
 			
-			UpperGAManager manager = new UpperGAManager(domainModelFitness, init, mutationConstraintChecker, metaModel,
+			UpperGAManager manager = new UpperGAManager(domainModelFitness, distanceCalculator, init, mutationConstraintChecker, metaModel,
 					configurationUpper, configurationLower, inputModel, 15);
 			manager.setPrefix(OUTPUT_PREFIX + "\\"+i);
 			double result = manager.runGA();

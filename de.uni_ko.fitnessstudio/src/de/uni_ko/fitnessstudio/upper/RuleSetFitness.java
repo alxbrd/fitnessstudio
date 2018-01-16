@@ -4,6 +4,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import com.lagodiuk.Fitness;
 
+import de.uni_ko.fitnessstudio.lower.DomainModelDistanceCalculator;
 import de.uni_ko.fitnessstudio.lower.DomainModelFitness;
 import de.uni_ko.fitnessstudio.lower.DomainModelInit;
 import de.uni_ko.fitnessstudio.lower.DomainModelMutator;
@@ -19,13 +20,15 @@ public class RuleSetFitness implements Fitness<RuleSet, Double> {
 	EObject model;
 	DomainModelFitness fitness;
 	DomainModelInit init;
+	DomainModelDistanceCalculator distanceCalculator;
 	GAConfiguration configurationLower;
 	private ConstraintChecker constraintChecker;
 	
-	public RuleSetFitness(DomainModelFitness fitness, DomainModelInit init, EObject model,
+	public RuleSetFitness(DomainModelFitness fitness, DomainModelDistanceCalculator distanceCalculator, DomainModelInit init, EObject model,
 			GAConfiguration configurationLower, ConstraintChecker constraintChecker) {
 		this.model = model;
 		this.fitness = fitness;
+		this.distanceCalculator = distanceCalculator;
 		this.init = init;
 		this.configurationLower = configurationLower;
 		this.constraintChecker = constraintChecker;
@@ -43,7 +46,7 @@ public class RuleSetFitness implements Fitness<RuleSet, Double> {
 
 	private Double getResultWithTimeout(DomainModelMutator mutator) {
 
-		LowerGAManager manager = new LowerGAManager(mutator, fitness, init, configurationLower, constraintChecker);
+		LowerGAManager manager = new LowerGAManager(mutator, fitness, distanceCalculator, init, configurationLower, constraintChecker);
 		return  manager.runGA();
 	}
 

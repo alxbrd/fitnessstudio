@@ -67,4 +67,8 @@ public class GAPopulation<C extends Chromosome<C>> implements Iterable<C> {
 		return this.chromosomes.iterator();
 	}
 
+	public List<C> getChromosomes() {
+		return chromosomes;
+	}
+
 }

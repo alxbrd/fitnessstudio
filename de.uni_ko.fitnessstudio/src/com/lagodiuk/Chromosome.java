@@ -23,4 +23,5 @@ public interface Chromosome<C extends Chromosome<C>> {
 	
 	public C mutate();
 
+
 }

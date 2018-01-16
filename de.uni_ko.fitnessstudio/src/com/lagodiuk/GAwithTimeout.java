@@ -10,8 +10,8 @@ import java.util.concurrent.TimeUnit;
 public class GAwithTimeout<C extends Chromosome<C>, T extends Comparable<T>>  extends GA<C, T>  {
 	int timeoutSeconds = 0;
 	
-	public GAwithTimeout(GAPopulation<C> population, Fitness<C, T> fitnessFunc, int timeoutSeconds) {
-		super(population, fitnessFunc);
+	public GAwithTimeout(GAPopulation<C> population, Fitness<C, T> fitnessFunc, DistanceCalculator<C, T> distanceCalculator, int timeoutSeconds) {
+		super(population, fitnessFunc, distanceCalculator);
 		this.timeoutSeconds = timeoutSeconds;
 	}
 

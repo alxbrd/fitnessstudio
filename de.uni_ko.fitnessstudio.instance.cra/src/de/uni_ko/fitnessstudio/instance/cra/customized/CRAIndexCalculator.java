@@ -218,4 +218,27 @@ public class CRAIndexCalculator {
 	    printOptimalityInfo(model);
 	}
 	
+
+	public static double calculateCohesion(Class clazz) {
+		// Copied+pasted from calculateCohesion(ClassModel)
+		double cohesionRatio = 0.0;
+			if(getMethodsClass(clazz).size()==0){
+				cohesionRatio +=0.0;
+			} else if (getMethodsClass(clazz).size()==1){ //Here, the second part of the addition is still 0
+				if (getAttributesClass(clazz).size()==0){ //and now, also the first part is 0
+					cohesionRatio += 0.0;
+				} else { //now, the first part is not 0
+					cohesionRatio += mai(clazz,clazz)/(double)(getMethodsClass(clazz).size()*getAttributesClass(clazz).size());
+				}
+			} else { //Here, we have more than one method in the clazz
+				if (getAttributesClass(clazz).size()==0){ //Now, the first part of the addition will be 0
+					cohesionRatio += mmi(clazz,clazz)/(double)(getMethodsClass(clazz).size()*(getMethodsClass(clazz).size()-1));
+				} else { //Here, we have more than 0 attributes and more than 1 method, so we use the whole formula
+					cohesionRatio += mai(clazz,clazz)/(double)(getMethodsClass(clazz).size()*getAttributesClass(clazz).size()) +
+							mmi(clazz,clazz)/(double)(getMethodsClass(clazz).size()*(getMethodsClass(clazz).size()-1));
+				}
+			}
+		return cohesionRatio;
+	}
+	
 }

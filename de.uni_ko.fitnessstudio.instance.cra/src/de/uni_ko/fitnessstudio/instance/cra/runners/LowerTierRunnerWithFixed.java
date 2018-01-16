@@ -24,6 +24,7 @@ import architectureCRA.ArchitectureCRAPackage;
 import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelFitness;
 import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelInit;
 import de.uni_ko.fitnessstudio.instance.cra.customized.CRAConstraintChecker;
+import de.uni_ko.fitnessstudio.instance.cra.customized.ClassModelDistanceCalculator;
 import de.uni_ko.fitnessstudio.lower.DomainModel;
 import de.uni_ko.fitnessstudio.lower.DomainModelMutator;
 import de.uni_ko.fitnessstudio.lower.LowerGAManager;
@@ -31,7 +32,7 @@ import de.uni_ko.fitnessstudio.util.GAConfiguration;
 import de.uni_ko.fitnessstudio.util.ModelIO;
 
 public class LowerTierRunnerWithFixed {
-	private static String INPUT_MODEL_ID = "C";
+	private static String INPUT_MODEL_ID = "E";
 	private static String INPUT_MODEL = "input\\TTC_InputRDG_"+INPUT_MODEL_ID+".xmi";
 	private static String MUTATION_RULES_DIRECTORY = "transformation\\fixed";
 	private static String OUTPUT_PREFIX = "output_models\\" +INPUT_MODEL_ID + "\\" + new SimpleDateFormat("HH_mm_ss").format(Calendar.getInstance().getTime()).toString() + "\\";
@@ -54,10 +55,11 @@ public class LowerTierRunnerWithFixed {
 			EObject inputModel = ModelIO.loadModel(INPUT_MODEL);
 			DomainModelMutator mutator = new DomainModelMutator(getFixedMutationRules());
 			ClassModelFitness fitness = new ClassModelFitness();
+			ClassModelDistanceCalculator distanceCalculator = new ClassModelDistanceCalculator();
 			ClassModelInit init = new ClassModelInit(inputModel, mutator);
 			CRAConstraintChecker constraintChecker = new CRAConstraintChecker();
 			
-			LowerGAManager gaManager = new LowerGAManager(mutator, fitness, init, configuration, constraintChecker);
+			LowerGAManager gaManager = new LowerGAManager(mutator, fitness, distanceCalculator, init, configuration, constraintChecker);
 			double result = gaManager.runGA();
 			DomainModel resultModel = gaManager.getResult();
 			long end = System.currentTimeMillis();
