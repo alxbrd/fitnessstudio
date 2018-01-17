@@ -25,26 +25,40 @@ public class ClassModelDistanceCalculator implements DomainModelDistanceCalculat
 		for (int i=0; i<size; i++) {			
 			List<Integer> encodedI = encoded.get(i);
 			for (int j=0; j<size; j++) {
+				if (i == j) {
+					distances[i][j] = 0.0;
+				}else {
+					
 				List<Integer> encodedJ = encoded.get(j);
-				int common = 0;
 				int classes = Math.min(encodedI.size(), encodedJ.size());
 				
-				for (int k = 0; k<classes; k++) {
-					if (encodedI.get(k) == encodedJ.get(k))
-						common++;
+				List<Integer> commonElems = new ArrayList<Integer>(encodedJ);
+				commonElems.retainAll(encodedI);
+				int common = commonElems.size();
+//				System.out.print(common);
+//				int common = 0;
+//				for (int k = 0; k<classes; k++) {
+//					System.out.println(encodedI.get(k) +  " " + encodedJ.get(k));
+//					if (encodedI.get(k) == encodedJ.get(k))
+//						common++;
+//				}
+				distances[i][j] = 1.0 - ((double) common) / ((double) classes);
+
 				}
-				
-				distances[i][j] = 1.0 - (common / classes);
 			}
 		}
-		
-//		for (int i = 0; i < distances.length; i++) {
-//		    for (int j = 0; j < distances[i].length; j++) {
-//		        System.out.print(distances[i][j] + " ");
-//		    }
-//		    System.out.println();
-//		}
 //		System.out.println();
+		
+		boolean printmatrix = false;
+		if (printmatrix) {
+		for (int i = 0; i < distances.length; i++) {
+		    for (int j = 0; j < distances[i].length; j++) {
+		        System.out.print(distances[i][j] + " ");
+		    }
+		    System.out.println();
+		}
+		System.out.println();
+		}
 		return distances;
 	}
 
@@ -53,26 +67,26 @@ public class ClassModelDistanceCalculator implements DomainModelDistanceCalculat
 		for (DomainModel d : chromosomes) {
 			List<Integer> resultEntry = new ArrayList<Integer>();
 			ClassModel c = (ClassModel) d.getContent();
-			List<Class> classes = new ArrayList<Class>(c.getClasses());
-			Map<Class, Double> class2fitness = new HashMap<Class, Double>();
-			for (Class cl : classes) {
-				class2fitness.put(cl, CRAIndexCalculator.calculateCohesion(cl));
-			}
+//			Map<Class, Double> class2fitness = new HashMap<Class, Double>();
+//			List<Class> classes = new ArrayList<Class>();
+//			for (Class cl : classes) {
+//				class2fitness.put(cl, CRAIndexCalculator.calculateCohesion(cl));
+//			}
+//			
+//			classes.sort(new Comparator<Class>() {
+//				@Override
+//				public int compare(Class o1, Class o2) {
+//					return Double.compare(class2fitness.get(o1), class2fitness.get(o2));
+//				}
+//			});
 			
-			classes.sort(new Comparator<Class>() {
-				@Override
-				public int compare(Class o1, Class o2) {
-					return Double.compare(class2fitness.get(o1), class2fitness.get(o2));
-				}
-			});
-			
-			Integer aggregatedHashCode = 0;
-			for (Class cl : classes) {
+			for (Class cl : c.getClasses()) {
+				Integer aggregatedHashCode = 0;
 				for (Feature en : cl.getEncapsulates()) {
 					aggregatedHashCode += en.hashCode();
 				}
+				resultEntry.add(aggregatedHashCode);
 			}
-			resultEntry.add(aggregatedHashCode);
 			result.add(resultEntry);
 		}
 		return result;

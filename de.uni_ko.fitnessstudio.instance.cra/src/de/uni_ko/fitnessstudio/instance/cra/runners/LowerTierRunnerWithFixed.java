@@ -32,7 +32,7 @@ import de.uni_ko.fitnessstudio.util.GAConfiguration;
 import de.uni_ko.fitnessstudio.util.ModelIO;
 
 public class LowerTierRunnerWithFixed {
-	private static String INPUT_MODEL_ID = "E";
+	private static String INPUT_MODEL_ID = "A";
 	private static String INPUT_MODEL = "input\\TTC_InputRDG_"+INPUT_MODEL_ID+".xmi";
 	private static String MUTATION_RULES_DIRECTORY = "transformation\\fixed";
 	private static String OUTPUT_PREFIX = "output_models\\" +INPUT_MODEL_ID + "\\" + new SimpleDateFormat("HH_mm_ss").format(Calendar.getInstance().getTime()).toString() + "\\";

@@ -89,22 +89,18 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 
 		GAPopulation<C> newPopulation = new GAPopulation<C>();
 
-		for (int i = 0; (i < parentPopulationSize) && (i < this.parentChromosomesSurviveCount); i++) {
-			newPopulation.addChromosome(this.population.getChromosomeByIndex(i));
-		}
 
 		for (int i = 0; i < parentPopulationSize; i++) {
 			C chromosome = this.population.getChromosomeByIndex(i);
 			C mutated = chromosome.mutate();
 			newPopulation.addChromosome(mutated);
-
 		}
 
-		int newPopulationSize = newPopulation.getSize();
-		Double[][] distanceMatrix = (Double[][]) distanceCalculator.calculate(newPopulation.getChromosomes());
-		for (int i = 0; i < newPopulationSize; i++) {
-			C chromosome = newPopulation.getChromosomeByIndex(i);
-			C otherChromosome = getRandomDistantChromosome(i, newPopulationSize, distanceMatrix, newPopulation.getChromosomes());
+		int populationSize = this.population.getSize();
+		Double[][] distanceMatrix = (Double[][]) distanceCalculator.calculate(this.population.getChromosomes());
+		for (int i = 0; i < populationSize; i++) {
+			C chromosome = this.population.getChromosomeByIndex(i);
+			C otherChromosome = getRandomDistantChromosome(i, populationSize, distanceMatrix, newPopulation.getChromosomes());
 			// C otherChromosome = this.population.getRandomChromosome();
 			List<C> crossovered = chromosome.crossover(otherChromosome);
 			for (C c : crossovered) {
@@ -113,15 +109,20 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 
 		}
 
+
+		for (int i = 0; (i < parentPopulationSize) && (i < this.parentChromosomesSurviveCount); i++) {
+			newPopulation.addChromosome(this.population.getChromosomeByIndex(i));
+		}
+		
 		newPopulation.sortPopulationByFitness(this.chromosomesComparator);
 		newPopulation.trim(parentPopulationSize);
 		this.population = newPopulation;
 	}
 
-	private C getRandomDistantChromosome(int i, int newPopulationSize, Double[][] distanceMatrix, List<C> chromosomes) {
+	private C getRandomDistantChromosome(int i, int populationSize, Double[][] distanceMatrix, List<C> chromosomes) {
 		double greatestDistance = 0.0;
 		List<C> results = new ArrayList<C>();
-		for (int j = 0; j <newPopulationSize; j++) {
+		for (int j = 0; j <populationSize; j++) {
 			if (i != j) {
 //				System.out.println(i + " " + j);
 				double dist = distanceMatrix[i][j];
@@ -134,8 +135,11 @@ public class GA<C extends Chromosome<C>, T extends Comparable<T>> {
 				}
 			}
 		}
-		return results.get((int) Math.floor(results.size() * Math.random()));
-
+		
+		if (results.size() > 0)
+			return results.get((int) Math.floor(results.size() * Math.random()));
+		else
+			return chromosomes.get(((int) (chromosomes.size() * Math.random())));
 	}
 
 	public void evolve(int count) {
